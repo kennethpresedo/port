@@ -1,13 +1,13 @@
 import React from 'react'
-import styles from './Home.css';
+//import styles from './Home.scss';
+import Header from '../../components/Header/Header'
+import About from '../../components/About/About'
 
-const Home = () => {
-  return (
-    <div className='head'>Kenneth Presedo <br/>
-     <span className='nav'>About Projects Contact </span>
-    </div>
-  
-  )
+export default function Home(){
+return(
+  <>
+  <Header />
+  <About />
+  </>
+)
 }
-
-export default Home
