@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -18,10 +18,45 @@
 .bio {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     font-size: 1.5vw;
     color: #fff;
 }
 
+.line1,
+.line2,
+.line3,
+.line4,
+.line5 {
+    padding-bottom: .6vw;
+    display: flex;
+    justify-content: flex-end;
+}
 
+
+.line6,
+.line7,
+.line8,
+.line9 {
+    padding-bottom: .6vw;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.line5,
+.line9 {
+    padding-bottom: 4vw;
+}
+
+
+.lineLable {
+    padding-bottom: 4vw;
+    font-size: 1.5vw;
+
+}
+
+.Link {
+    color: gray;
+    font-style: italic;
+}
