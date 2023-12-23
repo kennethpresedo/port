@@ -22,3 +22,44 @@
     font-size: 1.5vw;
     color: #fff;
 }
+
+.pic {
+    max-width: 100%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    object-position: center;
+    opacity: .4;
+}
+
+.pic:hover {
+    max-width: 100%;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 9vw;
+    width: 92vw; 
+    overflow: hidden;
+}
+
+.left{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
