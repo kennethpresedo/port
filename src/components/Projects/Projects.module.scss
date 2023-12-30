@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100vw;
 }
 
 
@@ -21,21 +21,18 @@
     flex-direction: column;
     font-size: 1.5vw;
     color: #fff;
+    padding-top: 4vw;
 }
 
 .pic {
     max-width: 100%;
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(100%);
+    // -webkit-filter: grayscale(100%); 
+    // filter: grayscale(100%);
     object-position: center;
-    opacity: .4;
 }
 
-.pic:hover {
-    max-width: 100%;
-    -webkit-filter: grayscale(100%); 
-    filter: grayscale(0%);
-    opacity: 1;
+.pic:hover {    
+    opacity: .8;
 }
 
 .title{
@@ -62,4 +59,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.githubLink {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo:hover {
+    opacity: .8;
 }
