@@ -1,19 +1,27 @@
-import React from 'react'
-//import styles from './Home.scss';
+//import React from 'react'
+import React from 'react';
+import { Element } from 'react-scroll'
 import Header from '../../components/Header/Header'
 import About from '../../components/About/About'
 import Projects from '../../components/Projects/Projects'
-import Break from '../../components/Break/Break'
 import Contact from '../../components/Contact/Contact'
 
-export default function Home(){
-return(
-  <>
-  <Header />
-  <About />
-  {/* <Break /> */}
-  <Projects />
-  <Contact />
-  </>
-)
+export default function Home() {
+
+  return (
+    <>
+      <Header />
+      <Element name="projectsSection">
+        <Projects />
+      </Element>
+
+      <Element name="aboutSection">
+        <About />
+      </Element>
+
+      <Element name="contactSection">
+        <Contact />
+      </Element>
+    </>
+  )
 }

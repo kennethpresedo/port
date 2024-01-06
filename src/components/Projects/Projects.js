@@ -3,6 +3,7 @@ import githubLogo from '../githubLogo.png'
 
 export default function Projects() {
 
+
   return (
     <>
       <div className={styles.container}>
@@ -17,8 +18,7 @@ export default function Projects() {
               </a>
             </span>
             <span className={styles.right}><a className={styles.githubLink} href="https://github.com/kennethpresedo/duluc_learning_center" target="_blank" rel="noopener noreferrer">duluc learning center&nbsp;<img className={styles.logo} src={githubLogo} alt='logo' width='25vw'/></a></span>
-
-
+            
           </div>
 
           <div className={styles.title}>
