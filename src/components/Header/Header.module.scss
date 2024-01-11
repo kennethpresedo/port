@@ -1,5 +1,5 @@
 .container{
-    height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,19 +8,26 @@
 
 .head {
     display: flex;
+    margin-top: 15%;
     justify-content: center;
     align-items: center;
     font-size: 5vw;
-    color: #fff;
+    color: #e9f5ed;
     text-align: center;
 }
-
+.p{
+    color: #e9f5ed;
+}
 .nav {
+    color: #e9f5ed;
+    background-color: transparent;
+    border: none;
+    font-family: 'Major Mono Display', monospace;    
     display: flex;
     justify-content: center;
     margin-top: 2%;
     font-size: 2vw;
-    color: #fff;
+    color: #e9f5ed;
     text-align: center;
 }
 
@@ -41,3 +48,16 @@
     opacity: .4;
 
 }
+
+// button{
+//     color: #e9f5ed;
+//     background-color: transparent;
+//     border: none;
+//     font-family: 'Major Mono Display', monospace;    
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 2%;
+//     font-size: 2vw;
+//     color: #e9f5ed;
+//     text-align: center;
+// }
