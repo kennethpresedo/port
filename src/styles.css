@@ -2,4 +2,7 @@
 :root{
     background-color: #000;
     font-family: 'Major Mono Display', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -6,10 +6,10 @@ export default function Projects() {
 
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.head}>Projects</div><br />
+      <div data-aos="flip-up" className={styles.container} >
+        {/* <div className={styles.head}>Projects</div><br /> */}
 
-        <div className={styles.projects}>
+        <div className={styles.projects} >
 
           <div className={styles.title}>
             <span className={styles.left}>

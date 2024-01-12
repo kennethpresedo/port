@@ -1,5 +1,4 @@
 .container{
-    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,16 +7,14 @@
 
 .head {
     display: flex;
-    margin-top: 15%;
     justify-content: center;
     align-items: center;
     font-size: 5vw;
-    color: #e9f5ed;
+    color: #e9f5f9;
     text-align: center;
+    padding-bottom: 2%;
 }
-.p{
-    color: #e9f5ed;
-}
+
 .nav {
     color: #e9f5ed;
     background-color: transparent;
@@ -25,39 +22,7 @@
     font-family: 'Major Mono Display', monospace;    
     display: flex;
     justify-content: center;
-    margin-top: 2%;
     font-size: 2vw;
-    color: #e9f5ed;
+    color: #e9f5f9;
     text-align: center;
 }
-
-.about:hover{
-    cursor: pointer;
-    opacity: .4;
-
-}
-
-.projects:hover{
-    cursor: pointer;
-    opacity: .4;
-
-}
-
-.contact:hover{
-    cursor: pointer;
-    opacity: .4;
-
-}
-
-// button{
-//     color: #e9f5ed;
-//     background-color: transparent;
-//     border: none;
-//     font-family: 'Major Mono Display', monospace;    
-//     display: flex;
-//     justify-content: center;
-//     margin-top: 2%;
-//     font-size: 2vw;
-//     color: #e9f5ed;
-//     text-align: center;
-// }

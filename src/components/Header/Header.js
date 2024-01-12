@@ -1,15 +1,15 @@
+import React, { useState } from 'react';
+//import { Link, animateScroll as scroll, Element } from 'react-scroll';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects';
-import styles from './Header.module.scss'
-import React, { useState } from 'react';
+import styles from './Header.module.scss';
 
 export default function Header() {
   const [isVisibleProjects, setIsVisibleProjects] = useState(false);
   const [isVisibleAbout, setIsVisibleAbout] = useState(false);
   const [isVisibleContact, setIsVisibleContact] = useState(false);
 
-  
   const handleProjectsClick = () => {
     setIsVisibleProjects(!isVisibleProjects);
     setIsVisibleAbout(false);
@@ -30,42 +30,32 @@ export default function Header() {
 
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.head}>Kenneth Presedo</div><br />
-        <div className={styles.nav}>
-        <button className={styles.nav} onClick={handleProjectsClick}>
-        {isVisibleProjects ? 'Projects' : 'Projects'}
-      </button> 
+      <div className={styles.container}>   
+      {(!isVisibleProjects && !isVisibleAbout && !isVisibleContact) && (
+          <div className={styles.head} style={{marginTop:'50%vw', marginBottom: '2%'}}>Kenneth Presedo</div>
+        )}
+          <span className="scroll">
+            <div className={styles.nav}>
+              
+                <button className={styles.nav} smooth={true} duration={800} onClick={handleProjectsClick}>
+                  {isVisibleProjects ? 'Projects' : 'Projects'}
+                </button>
 
-      <button className={styles.nav} onClick={handleAboutClick}>
-        {isVisibleAbout ? 'About' : 'About'}
-      </button>
+              
+                <button className={styles.nav} smooth={true} duration={800} onClick={handleAboutClick}>
+                  {isVisibleAbout ? 'About' : 'About'}
+                </button>
 
-      <button className={styles.nav} onClick={handleContactClick}>
-        {isVisibleContact ? 'Contact' : 'Contact'}
-      </button>
-
-
-         </div>
-      {isVisibleProjects && <Projects />}
-      {isVisibleAbout && <About />}
-      {isVisibleContact && <Contact />}
-
+                <button className={styles.nav} smooth={true} duration={800} onClick={handleContactClick}>
+                  {isVisibleContact ? 'Contact' : 'Contact'}
+                </button>
+            </div>
+          </span>
+        
+        {isVisibleProjects && <Projects  /> }
+        {isVisibleAbout && <About /> }
+        {isVisibleContact && <Contact /> }
       </div>
     </>
-  )
+  );
 }
-
-
-{/* <Link to="projectsSection" smooth={true} duration={800}>
-<span className={styles.projects}>Projects</span>&nbsp;
-</Link>
-
-
-<Link to="aboutSection" smooth={true} duration={800}>
-<span className={styles.about}>About</span>&nbsp;
-</Link>
-
-<Link to="contactSection" smooth={true} duration={800}>
-<span className={styles.contact}>Contact</span>
-</Link> */}
