@@ -10,7 +10,9 @@ export default function Contact() {
                     Contact
                 </div>
                 <div className={styles.contact}>
-                    <a className={styles.socialsLinkedin} href="https://www.linkedin.com/in/kenneth-presedo/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a className={styles.socialsLinkedin} href="https://www.linkedin.com/in/kenneth-presedo/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
                     resume email
                 </div>
             </div>

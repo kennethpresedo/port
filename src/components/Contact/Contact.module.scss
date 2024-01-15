@@ -1,23 +1,27 @@
-.container{
+.container {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    height:fit-content;
+    width: 100vw;
 }
-
 .head {
     display: flex;
     justify-content: center;
-    font-size: 5vw;
-    color: #fff;
+    font-size: 4vw;
+    color: #e9f5f9;
     padding-top: 3%;
     padding-bottom: 3%;
 }
 
 .contact{
-    color: #fff;
+    color: #e9f5f9;
+    width: 93vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .socialsLinkedin {
-    color: #fff;
+    color: #e9f5f9;
 }

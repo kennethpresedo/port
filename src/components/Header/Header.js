@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-//import { Link, animateScroll as scroll, Element } from 'react-scroll';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects';
@@ -30,31 +29,40 @@ export default function Header() {
 
   return (
     <>
-      <div className={styles.container}>   
-      {(!isVisibleProjects && !isVisibleAbout && !isVisibleContact) && (
-          <div className={styles.head} style={{marginTop:'50%vw', marginBottom: '2%'}}>Kenneth Presedo</div>
+      <div className={styles.container} smooth={true} duration={100} >
+        {(!isVisibleProjects && !isVisibleAbout && !isVisibleContact) && (
+          <div className={styles.head}>Kenneth Presedo</div>
         )}
-          <span className="scroll">
-            <div className={styles.nav}>
-              
-                <button className={styles.nav} smooth={true} duration={800} onClick={handleProjectsClick}>
-                  {isVisibleProjects ? 'Projects' : 'Projects'}
-                </button>
+        <div className={styles.nav}>
 
-              
-                <button className={styles.nav} smooth={true} duration={800} onClick={handleAboutClick}>
-                  {isVisibleAbout ? 'About' : 'About'}
-                </button>
+          <button
+            className={styles.nav}
+            style={{ backgroundColor: isVisibleProjects ? '#e9f5f9' : '', color: isVisibleProjects ? '#000' : '' }}
+            onClick={handleProjectsClick}
+          >
+            {isVisibleProjects ? 'Portfolio' : 'Portfolio'}
+          </button>
 
-                <button className={styles.nav} smooth={true} duration={800} onClick={handleContactClick}>
-                  {isVisibleContact ? 'Contact' : 'Contact'}
-                </button>
-            </div>
-          </span>
-        
-        {isVisibleProjects && <Projects  /> }
-        {isVisibleAbout && <About /> }
-        {isVisibleContact && <Contact /> }
+          <button
+            className={styles.nav}
+            style={{ backgroundColor: isVisibleAbout ? '#e9f5f9' : '' , color: isVisibleAbout ? '#000' : ''}}
+            onClick={handleAboutClick}
+          >
+            {isVisibleAbout ? 'About' : 'About'}
+          </button>
+
+          <button
+            className={styles.nav}
+            style={{ backgroundColor: isVisibleContact ? '#e9f5f9' : '', color: isVisibleContact ? '#000' : '' }}
+            onClick={handleContactClick}
+          >
+            {isVisibleContact ? 'Contact' : 'Contact'}
+          </button>
+        </div>
+
+        {isVisibleProjects && <Projects />}
+        {isVisibleAbout && <About />}
+        {isVisibleContact && <Contact />}
       </div>
     </>
   );
