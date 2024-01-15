@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height:fit-content;
+    height: fit-content;
     width: 100vw;
 }
+
 .head {
     display: flex;
     justify-content: center;
@@ -14,14 +15,50 @@
     padding-bottom: 3%;
 }
 
-.contact{
+.contact {
     color: #e9f5f9;
+    border-width: .4vw;
+    border-style: solid;
+    border-color: #e9f5f9;
     width: 93vw;
+    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.left {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    float: left;
+    font-size: 3vw;
+}
+
+.break{
+    border-width: .1vw;
+    height: 75%;
+    border-color: #e9f5f9;
+    border-style: solid;
+}
+.right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 50%;
+    float: right;
+}
+
 .socialsLinkedin {
     color: #e9f5f9;
+}
+
+.arroba, .hash{
+    font-size: 4vw;
+}
+
+.arroba:hover{
+    cursor: pointer;
 }
