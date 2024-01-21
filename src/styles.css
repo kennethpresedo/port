@@ -5,4 +5,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    --gradient-color: linear-gradient(90deg, rgba(130, 214, 255, 1) 0%, rgba(230, 131, 252, 1) 100%);
+    --text-gradient: linear-gradient(90deg, rgba(130, 214, 255, 1) 0%, rgba(230, 131, 252, 1) 100%);
+  
+    .element {
+      background-color: #e9f5f9; 
+      color: #fff; 
+      background: var(--gradient-color);
+      color: var(--text-gradient);
+    }
+
+  }
+
+  

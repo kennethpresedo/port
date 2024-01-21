@@ -37,7 +37,11 @@ export default function Header() {
 
           <button
             className={styles.nav}
-            style={{ backgroundColor: isVisibleProjects ? '#e9f5f9' : '', color: isVisibleProjects ? '#000' : '' }}
+            style={{
+              background: isVisibleProjects ? 'var(--gradient-color)' : '#000',
+              color: isVisibleProjects ? '#000' : '',
+            }}
+
             onClick={handleProjectsClick}
           >
             {isVisibleProjects ? 'Portfolio' : 'Portfolio'}
@@ -45,7 +49,11 @@ export default function Header() {
 
           <button
             className={styles.nav}
-            style={{ backgroundColor: isVisibleAbout ? '#e9f5f9' : '' , color: isVisibleAbout ? '#000' : ''}}
+            style={{
+              background: isVisibleAbout ? 'var(--gradient-color)' : '#000',
+              color: isVisibleAbout ? '#000' : '',
+            }}
+
             onClick={handleAboutClick}
           >
             {isVisibleAbout ? 'About' : 'About'}
@@ -53,7 +61,11 @@ export default function Header() {
 
           <button
             className={styles.nav}
-            style={{ backgroundColor: isVisibleContact ? '#e9f5f9' : '', color: isVisibleContact ? '#000' : '' }}
+            style={{
+              background: isVisibleContact ? 'var(--gradient-color)' : '#000',
+              color: isVisibleContact ? '#000' : '',
+            }}
+
             onClick={handleContactClick}
           >
             {isVisibleContact ? 'Contact' : 'Contact'}

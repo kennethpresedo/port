@@ -14,26 +14,28 @@ export default function Contact() {
                 </div>
                 <div className={styles.contact}>
                     <div className={styles.left}>
-                        KP
-                    </div>
-                    <div className={styles.break}></div>
-                    <div className={styles.right}>
-                            <div className={styles.top}>
                             <a className={styles.socialsLinkedin} href="https://www.linkedin.com/in/kenneth-presedo/" target="_blank" rel="noopener noreferrer">
-                                <img className={styles.logo} src={linkedinLogo} alt='logo' width='55vw' />
+                                <img className={styles.logo} src={linkedinLogo} alt='logo' width='45vw' />
                             </a>
                             <a className={styles.socialsEmail} href="mailto:kennethpresedo@live.com?subject=Just saw your portfolio!&body=Just wanted to let you know that, YOU ROCK!">
                                 <div className={styles.arroba}>
-                                    <img className={styles.pin} src={at} alt='logo' width='55vw' />
+                                    <img className={styles.pin} src={at} alt='logo' width='45vw' />
                                 </div>
                             </a>
                             <div className={styles.hash}>
-                                <img className={styles.pin} src={call} alt='logo' width='55vw' />
+                                <img className={styles.pin} src={call} alt='logo' width='45vw' />
                             </div>
                             <div className={styles.pin}>
-                                <img className={styles.pin} src={location} alt='logo' width='55vw' />
+                                <img className={styles.pin} src={location} alt='logo' width='45vw' />
                             </div>
-                        </div>
+                    </div>
+                    <div className={styles.break}>
+                    <div className={styles.breakTop}></div>
+                    <div className={styles.breakMid}>KP</div>
+                    <div className={styles.breakBottom}></div>
+                    </div>
+                    <div className={styles.right}>
+      
                         <div className={styles.bottom}>
                             in/kenneth-presedo< br />
                             kennethpresedo@live.com<br />
