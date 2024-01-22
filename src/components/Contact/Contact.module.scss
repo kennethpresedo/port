@@ -19,7 +19,6 @@
     color: #e9f5f9;
     border-width: .4vw;
     border-style: solid;
-    border-color: #e9f5f9;
     width: 93vw;
     height: 55vh;
     display: flex;
@@ -44,7 +43,8 @@
     flex-direction: column;
     width: 50%;
     float: right;
-    color: #e9f5f9;
+    color: #e9f5f9;  
+
 }
 
 .top {
@@ -71,8 +71,7 @@
     font-size: 4vw;
 }
 
-.arroba:hover,
-.hash:hover {
+.arroba:hover{
     cursor: pointer;
 }
 
