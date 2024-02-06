@@ -80,3 +80,92 @@
 .description{
     font-size: 1vw;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height:fit-content;
+        width: 100vw;
+    }
+    
+    
+    .head {
+        display: flex;
+        justify-content: center;
+        font-size: 14vw;
+        color: #e9f5f9;
+    }
+    
+    .projects {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 5vw;
+        color: #e9f5f9;
+        margin-bottom: 3%;
+    }
+    
+    .pic {
+        max-width: 100%;
+        object-position: center;
+        opacity: 1;
+    }
+    
+    
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 30vw;
+        width: fit-content;
+        overflow: hidden;
+    }
+    
+    .left{
+        width: 50vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .right{
+        width: 50vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .githubLink {
+        color: #e9f5f9;
+        text-decoration: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .logo:hover {
+        opacity: 1;
+    }
+
+    .description{
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .logo{
+        display: none;
+    }
+
+}

@@ -34,3 +34,43 @@
 .nav:hover {
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 8vw;
+        color: #e9f5ed;
+        text-align: center;
+        padding-bottom: 3%;
+        margin-top: 40vh;
+    
+    }
+    
+    .nav {
+        color: #e9f5ed;
+        background-color: transparent;
+        border: none;
+        font-family: 'Major Mono Display', monospace;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+        font-size: 3.5vw;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        margin-top: 3%;
+    }
+
+
+}
